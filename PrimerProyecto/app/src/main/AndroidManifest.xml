@@ -26,10 +26,6 @@
             android:name=".ImplicitActivity"
             android:exported="false" />
         <activity
-            android:name=".ImplicitActivity2"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".LinearLayoutActivity"
             android:exported="true"
             android:screenOrientation="portrait">
