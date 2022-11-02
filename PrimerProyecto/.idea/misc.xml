@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2295" />
+        <entry key="app/src/main/res/layout/activity_confirm_personal_details.xml" value="0.12182971014492754" />
         <entry key="app/src/main/res/layout/activity_explicit.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/activity_explicit_detail.xml" value="0.19931488037109377" />
         <entry key="app/src/main/res/layout/activity_explicit_intent.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_frame_layout.xml" value="0.2667572463768116" />
+        <entry key="app/src/main/res/layout/activity_implicit.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_linear_layout.xml" value="0.2667572463768116" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.10092592592592593" />
+        <entry key="app/src/main/res/layout/activity_personal_details.xml" value="0.18476534242983217" />
       </map>
     </option>
   </component>

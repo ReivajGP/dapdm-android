@@ -14,19 +14,25 @@
         android:theme="@style/Theme.PrimerProyecto"
         tools:targetApi="31">
         <activity
-            android:name=".FrameLayoutActivity"
+            android:name=".ejercicio_final.ConfirmPersonalDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ExplicitActivity"
+            android:name=".ejercicios_clase.LinearLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".ExplicitDetailActivity"
+            android:name=".ejercicios_clase.FrameLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".ImplicitActivity"
+            android:name=".ejercicios_clase.ExplicitActivity"
             android:exported="false" />
         <activity
-            android:name=".LinearLayoutActivity"
+            android:name=".ejercicios_clase.ExplicitDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicios_clase.ImplicitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_final.PersonalDetailsActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -36,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ejercicios_clase.MainActivity"
             android:screenOrientation="portrait" />
     </application>
 

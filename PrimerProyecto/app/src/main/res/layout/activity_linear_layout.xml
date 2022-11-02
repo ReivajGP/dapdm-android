@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".LinearLayoutActivity">
+    tools:context=".ejercicios_clase.LinearLayoutActivity">
 
     <TextView
         android:text="TEXTO 1"

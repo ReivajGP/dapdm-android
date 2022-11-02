@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_final.ConfirmPersonalDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvPDCTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmación de datos"
+        android:gravity="center"
+        android:textSize="24sp"/>
+    
+    <TextView
+        android:id="@+id/tvPDCTitleFooter"
+        android:layout_below="@+id/tvPDCTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Si todo está en orden podemos seguir adelante!"
+        android:gravity="center"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/tvPDCName"
+        android:layout_below="@+id/tvPDCTitleFooter"
+        android:layout_marginTop="70dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPDCLastName"
+        android:layout_below="@+id/tvPDCName"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellido paterno"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPDCMaternalLastName"
+        android:layout_below="@+id/tvPDCLastName"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellido materno"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPDCAge"
+        android:layout_below="@+id/tvPDCMaternalLastName"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</RelativeLayout>
