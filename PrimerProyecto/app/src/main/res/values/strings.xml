@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PrimerProyecto</string>
+    <string name="relative_layout_activity_title">Texto dentro de un RelativeLayout</string>
+    <string name="relative_layout_activity_text_field_hint">Escribe tu nombre</string>
 </resources>
