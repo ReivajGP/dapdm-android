@@ -8,16 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rgp.primerproyecto.R
 
-class UserAdapter(private val items: ArrayList<RecyclerViewUser>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
-    class UserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val userName: TextView
-        val userImage: ImageView
-
-        init {
-            userName = view.findViewById(R.id.tvUserName)
-            userImage = view.findViewById(R.id.ivUserImage)
-        }
-    }
+class UserAdapter(private val items: ArrayList<RecyclerViewUser>, private val listener: RecyclerItemListener) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item_user, parent, false)
@@ -26,9 +17,22 @@ class UserAdapter(private val items: ArrayList<RecyclerViewUser>) : RecyclerView
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         holder.userName.text = items[position].name
+        holder.itemView.setOnClickListener {
+            listener.onItemSelected(items[position])
+        }
     }
 
     override fun getItemCount(): Int {
         return items.size
+    }
+
+    class UserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val userName: TextView
+        val userImage: ImageView
+
+        init {
+            userName = view.findViewById(R.id.tvUserName)
+            userImage = view.findViewById(R.id.ivUserImage)
+        }
     }
 }
