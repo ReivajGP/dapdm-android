@@ -14,10 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ThemeExample" parent="Theme.PrimerProyecto">
-        <item name="colorPrimary">@color/red</item>
-    </style>
-
     <style name="ThemeOverlay.PrimerProyecto.FullscreenContainer" parent="">
         <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
         <item name="fullscreenTextColor">@color/light_blue_A400</item>
