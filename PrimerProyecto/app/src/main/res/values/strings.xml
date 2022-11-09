@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">PrimerProyecto</string>
+    <string name="relative_layout_activity_title">Texto dentro de un RelativeLayout</string>
+    <string name="relative_layout_activity_text_field_hint">Escribe tu nombre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Excercise two data -->
+    <string name="excercise_two_bear">Oso</string>
+    <string name="excercise_two_dog">Perro</string>
+    <string name="excercise_two_cat">Gato</string>
+    <string name="excercise_two_puma">Puma</string>
+    <string name="excercise_two_eagle">Águila</string>
+    <string name="excercise_two_tlacuache">Tlacuache</string>
+    <string name="excercise_two_squirrel">Ardilla</string>
+    <string name="excercise_two_swan">Cisne</string>
+
+    <string name="excercise_two_location_a">África</string>
+    <string name="excercise_two_location_b">Global</string>
+    <string name="excercise_two_location_c">Global</string>
+    <string name="excercise_two_location_d">América</string>
+    <string name="excercise_two_location_e">América</string>
+    <string name="excercise_two_location_f">México</string>
+    <string name="excercise_two_location_g">América</string>
+    <string name="excercise_two_location_h">Europa</string>
 </resources>
