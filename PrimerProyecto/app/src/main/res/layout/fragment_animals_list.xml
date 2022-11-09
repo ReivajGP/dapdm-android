@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ejercicio_dos.AnimalsListFragment">
 
+    <TextView
+        android:id="@+id/tvAnimalTitle"
+        android:text="ANIMALES"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
+        android:layout_below="@id/tvAnimalTitle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/recyclerview_item_animal"/>
 
-</FrameLayout>
+</RelativeLayout>

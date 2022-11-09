@@ -1,5 +1,6 @@
 package com.rgp.primerproyecto.ejercicio_dos
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.rgp.primerproyecto.R
 
-class AnimalsListFragment : Fragment() {
+
+class AnimalsListFragment : Fragment(), RecyclerAnimalListener {
 
     private lateinit var adapter: Adapter
     private lateinit var recyclerView: RecyclerView
@@ -28,62 +30,23 @@ class AnimalsListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        dataInit()
+        animals = AnimalDataManager(this).getAnimalsToDisplay()
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
-        adapter = Adapter(animals)
+        adapter = Adapter(animals, this)
         recyclerView.adapter = adapter
     }
 
-    companion object {
+    override fun onAnimalSelected(animal: Animal) {
+        passAnimalObject(animal)
     }
 
-    private fun dataInit() {
-        animals = arrayListOf<Animal>()
-
-        animalName = arrayOf(
-            getString(R.string.excercise_two_bear),
-            getString(R.string.excercise_two_dog),
-            getString(R.string.excercise_two_cat),
-            getString(R.string.excercise_two_puma),
-            getString(R.string.excercise_two_eagle),
-            getString(R.string.excercise_two_tlacuache),
-            getString(R.string.excercise_two_squirrel),
-            getString(R.string.excercise_two_swan)
-        )
-
-        animalImage = arrayOf(
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo,
-            R.drawable.ic_android_photo
-            /*R.drawable.oso,
-            R.drawable.perro,
-            R.drawable.gato,
-            R.drawable.puma,
-            R.drawable.aguila,
-            R.drawable.tlacuache,
-            R.drawable.ardilla,
-            R.drawable.cisne*/
-        )
-
-
-        for (index in animalImage.indices) {
-            val animal = Animal(
-                animalName[index],
-                animalImage[index],
-                true,
-                true,
-                "Africa",
-                5
-            )
-            animals.add(animal)
+    private fun passAnimalObject(animal: Animal) {
+        val intent = Intent(activity, AnimalDetailActivity::class.java).apply {
+            putExtra("KEY_ANIMAL", animal)
         }
+        startActivity(intent)
     }
 }
