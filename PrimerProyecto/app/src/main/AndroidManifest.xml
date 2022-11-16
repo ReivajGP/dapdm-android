@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.rgp.primerproyecto">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimerProyecto"
         tools:targetApi="31">
+        <activity
+            android:name=".ejercicios_clase.almacenamiento.FilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicios_clase.almacenamiento.PrefsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicios_clase.fragments.bottom_navigation.BottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio_dos.AnimalsManagerActivity"
+            android:exported="false" />
         <activity
             android:name=".ejercicio_dos.AnimalDetailActivity"
             android:exported="false" />
@@ -53,7 +67,7 @@
             android:name=".ejercicios_clase.ImplicitActivity"
             android:exported="false" />
         <activity
-            android:name=".ejercicio_dos.AnimalsManagerActivity"
+            android:name=".ejercicios_clase.almacenamiento.SQLiteActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
