@@ -14,10 +14,10 @@ class FilesActivity : AppCompatActivity() {
 
         val etInfo: EditText = findViewById(R.id.etInfo)
         val btSaveFile: Button = findViewById(R.id.btSaveFile)
-        val ivPerson: ImageView = findViewById((R.id.ivPerson))
+        //val ivPerson: ImageView = findViewById((R.id.ivPerson))
 
         val fileName: String = "texto.txt"
-        val body: String = "Cuerpo del archivo"
+        //val body: String = "Cuerpo del archivo"
 
         // TODO: ADD GLIDE HERE
 

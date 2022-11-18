@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_tres.DBAddAnimalActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:layout_marginTop="40dp"
+        android:text="Ingresar nuevo animal"/>
+    
+    <EditText
+        android:id="@+id/etAnimalName"
+        android:layout_below="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del animal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/etAnimalUrl"
+        android:layout_below="@+id/etAnimalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL de imagen"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"/>
+    
+    <ImageView
+        android:id="@+id/ivAnimalPreview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#FFDDAF"
+        android:layout_below="@id/etAnimalUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_below="@id/ivAnimalPreview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Previsualización"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <Button
+        android:id="@+id/btFirst"
+        android:text="Botón 1"
+        android:layout_above="@id/btSecond"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <Button
+        android:id="@+id/btSecond"
+        android:text="Botón 2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+</RelativeLayout>
