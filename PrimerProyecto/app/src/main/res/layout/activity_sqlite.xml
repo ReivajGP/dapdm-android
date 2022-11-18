@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicios_clase.almacenamiento.SQLiteActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/etDescription"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="AGREGAR"/>
+
+    <Button
+        android:id="@+id/btView"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btAdd"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="VISUALIZAR DB"/>
+
+    <Button
+        android:id="@+id/btUpdate"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Actualizar"/>
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btUpdate"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eliminar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btDelete"
+        android:background="#FFDFDF"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

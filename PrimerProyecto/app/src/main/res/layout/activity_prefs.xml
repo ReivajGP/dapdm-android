@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicios_clase.almacenamiento.PrefsActivity">
+
+    <TextView
+        android:id="@+id/tvMonitor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:textSize="20sp"
+        android:background="#FDEDED"/>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMonitor"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:hint="Escribe aquí"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/etInput"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Guardar"/>
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btSave"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eliminar"
+        android:background="#DD0000"/>
+</RelativeLayout>

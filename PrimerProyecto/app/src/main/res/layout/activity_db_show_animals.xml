@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_tres.DBShowAnimalsActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:layout_marginTop="40dp"
+        android:text="Lista de animales"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDBAnimals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_above="@id/btAddAnimal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        tools:listitem="@layout/db_animal_item"/>
+
+    <Button
+        android:id="@+id/btAddAnimal"
+        android:text="Agregar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"/>
+</RelativeLayout>
