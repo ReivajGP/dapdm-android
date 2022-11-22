@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MVVMAndroidExample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail_name">Nombre: %s</string>
+    <string name="detail_lastname">Apellido: %s</string>
+    <string name="detail_age">Edad: %s</string>
+
+</resources>
