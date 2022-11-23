@@ -14,10 +14,10 @@
         android:theme="@style/Theme.EjercicioFinalAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".view.activities.NavActivity"
+            android:name=".view.activities.AnimalListActivity"
             android:exported="false" />
         <activity
-            android:name=".view.activities.AnimalListActivity"
+            android:name=".view.activities.NavActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,8 +7,9 @@
         <entry key="app/src/main/res/layout/activity_nav.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/animal_item.xml" value="0.1363535563151042" />
         <entry key="app/src/main/res/layout/animals_nav.xml" value="0.2151268115942029" />
-        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.21332402604349543" />
         <entry key="app/src/main/res/layout/fragment_list.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/pin.xml" value="0.115" />
       </map>
     </option>
   </component>
