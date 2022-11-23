@@ -23,5 +23,17 @@
         <argument
             android:name="animal"
             app:argType="com.rgp.ejerciciofinalandroid.model.entities.Animal"/>
+        <action
+            android:id="@+id/action_detailFragment_to_entryFragment2"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.rgp.ejerciciofinalandroid.view.fragments.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry">
+        <argument
+            android:name="animal"
+            app:argType="com.rgp.ejerciciofinalandroid.model.entities.Animal"/>
     </fragment>
 </navigation>

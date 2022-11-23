@@ -25,4 +25,12 @@ class ListViewModel : ViewModel() {
             loader.postValue(false)
         },  1000)
     }
+
+    fun formatDescription(logs: ArrayList<String>) : String {
+        var unifiedLog = ""
+        for (log in logs) {
+            unifiedLog = unifiedLog + log + "\n\n"
+        }
+        return unifiedLog
+    }
 }

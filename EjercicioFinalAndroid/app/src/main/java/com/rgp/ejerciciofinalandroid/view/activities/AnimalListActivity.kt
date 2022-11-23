@@ -14,7 +14,6 @@ class AnimalListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnimalListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, ListFragment())
             .commit()

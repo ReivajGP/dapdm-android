@@ -154,8 +154,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/rlPeriodicCheck"
-                    android:hint="Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora"
                     android:layout_marginTop="20dp"
+                    android:hint="Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora"
                     android:padding="10dp"
                     android:textSize="18sp" />
 
