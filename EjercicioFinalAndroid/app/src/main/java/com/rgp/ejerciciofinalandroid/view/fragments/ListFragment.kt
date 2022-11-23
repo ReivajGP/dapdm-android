@@ -40,6 +40,7 @@ class ListFragment : Fragment(R.layout.fragment_list) {
         animalViewModel.list.observe(viewLifecycleOwner, Observer { newItems ->
             adapter.updateItems(newItems)
         })
+
         animalViewModel.loader.observe(viewLifecycleOwner, {
             binding.loader.visibility = if (it == true) View.VISIBLE else View.GONE
             binding.animalsList.visibility = if (it == true) View.GONE else View.VISIBLE

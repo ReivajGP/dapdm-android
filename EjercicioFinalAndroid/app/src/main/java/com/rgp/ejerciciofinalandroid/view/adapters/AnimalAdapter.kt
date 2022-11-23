@@ -28,16 +28,11 @@ class AnimalAdapter(private var items: ArrayList<Animal>) : RecyclerView.Adapter
 
     class AnimalViewHolder(val binding: AnimalItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(animal: Animal, onItemTap: ((Animal) -> Unit)?) {
-            binding.brief = AnimalBrief(animal.name,"128-B")
-           // binding.animal = animal
-//            binding.tvName.text = "Nombre: ${user.name}"
-//            binding.tvLastName.text = "Apellido:${user.lastName}"
-//            binding.tvAge.text = "Edad: ${user.age}"
+            binding.brief = AnimalBrief(animal.name, animal.disease)
 
-            animal?.image?.let {
-                Glide.with(binding.root).load(it).centerCrop().placeholder(R.mipmap.ic_launcher).into(binding.animalImage)
+            animal?.image?.let { url ->
+                Glide.with(binding.root).load(url).centerCrop().placeholder(R.mipmap.ic_launcher).into(binding.animalImage)
             }
-
 
             binding.animalCard.setOnClickListener {
                 onItemTap?.invoke(animal)

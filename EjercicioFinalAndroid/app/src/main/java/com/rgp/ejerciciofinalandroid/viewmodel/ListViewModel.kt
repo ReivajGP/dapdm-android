@@ -6,6 +6,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.rgp.ejerciciofinalandroid.model.entities.Animal
 import com.rgp.ejerciciofinalandroid.model.repository.AnimalsRepository
+import kotlin.random.Random
+import kotlin.random.nextInt
 
 class ListViewModel : ViewModel() {
     val list = MutableLiveData<ArrayList<Animal>>()
@@ -17,10 +19,10 @@ class ListViewModel : ViewModel() {
 
     fun getAnimalsList() {
         loader.postValue(true)
-        Handler(Looper.getMainLooper()).postDelayed({
+        val postDelayed = Handler(Looper.getMainLooper()).postDelayed({
             val animals = AnimalsRepository.getFakeAnimals()
             list.postValue(animals)
             loader.postValue(false)
-        }, 3000)
+        },  1000)
     }
 }
