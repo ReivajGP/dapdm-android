@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">EjercicioFinalAndroid</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Pet care</string>
+
+    <!--LIST FRAGMENT STRINGS-->
+    <string name="list_fragment_title">Animales en consulta</string>
+
+    <!--DETAIL FRAGMENT STRINGS-->
+    <string name="detail_fragment_title">Bitácora</string>
+    <string name="detail_fragment_weight">%s Kg</string>
+
+    <!--ENTRY FRAGMENT STRINGS-->
+    <string name="entry_fragment_title">Detalle</string>
+    <string name="entry_toast_log_successfully_added">Entrada añadida exitosamente.</string>
+
 </resources>

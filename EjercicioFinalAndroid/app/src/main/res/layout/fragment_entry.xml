@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".view.fragments.EntryFragment">
 
     <RelativeLayout
@@ -82,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/rlPeriodicCheck"
                     android:layout_marginTop="20dp"
-                    android:hint="Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora"
+                    android:hint="Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora"
                     android:padding="10dp"
                     android:textSize="18sp" />
 
@@ -111,11 +109,12 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/etHour"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="00"
+                    android:hint="HH"
                     android:textSize="20sp" />
             </FrameLayout>
 
@@ -132,11 +131,12 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/etMin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="00"
+                    android:hint="mm"
                     android:textSize="20sp" />
             </FrameLayout>
         </LinearLayout>

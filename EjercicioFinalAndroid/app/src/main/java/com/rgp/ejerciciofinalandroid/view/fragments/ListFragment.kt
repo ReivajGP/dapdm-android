@@ -20,6 +20,11 @@ class ListFragment : Fragment(R.layout.fragment_list) {
     private lateinit var binding: FragmentListBinding
     private lateinit var adapter: AnimalAdapter
 
+    override fun onResume() {
+        super.onResume()
+        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.list_fragment_title)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentListBinding.bind(view)
@@ -39,11 +44,6 @@ class ListFragment : Fragment(R.layout.fragment_list) {
 
         animalViewModel.list.observe(viewLifecycleOwner, Observer { newItems ->
             adapter.updateItems(newItems)
-        })
-
-        animalViewModel.loader.observe(viewLifecycleOwner, {
-            binding.loader.visibility = if (it == true) View.VISIBLE else View.GONE
-            binding.animalsList.visibility = if (it == true) View.GONE else View.VISIBLE
         })
     }
 }
