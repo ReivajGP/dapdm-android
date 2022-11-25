@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.fragments.EntryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="Nombre"
+            android:textSize="26sp" />
+
+        <ScrollView
+            android:id="@+id/svLog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/llLogTime"
+            android:layout_below="@+id/tvName"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvFileTitle"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="#E6F095"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlPeriodicCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#D1E8FF"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:id="@+id/cbMorning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Revisión matutina"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbAfternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/cbMorning"
+                        android:text="Revisión vespertina"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbNight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/cbAfternoon"
+                        android:text="Revisión nocturna"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/pin" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlPeriodicCheck"
+                    android:layout_marginTop="20dp"
+                    android:hint="Bitácora Bitácora Bitácora Bitácora BitácoraBitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora Bitácora"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llLogTime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/etLogEntry"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Hora"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="HH"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Min."
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etMin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="mm"
+                    android:textSize="20sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etLogEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btAddLogEntry"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Escribe aquí la anotación de bitácora"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btAddLogEntry"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6584A3"
+            android:text="Añadir entrada" />
+    </RelativeLayout>
+</layout>
